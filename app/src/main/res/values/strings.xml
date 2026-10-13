@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Social Timer</string>
+    <string name="notification_channel_name">Active Timer</string>
+    <string name="notification_channel_desc">Shows ongoing social media timer and alerts</string>
+    <string name="times_up_title">Time\'s Up!</string>
+    <string name="times_up_message">Your allocated social media session has ended.</string>
+    <string name="action_pause">Pause</string>
+    <string name="action_resume">Resume</string>
+    <string name="action_stop">Stop</string>
+    <string name="action_reset">Reset</string>
+</resources>

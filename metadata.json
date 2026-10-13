@@ -1,0 +1,6 @@
+{
+  "name": "Social Timer",
+  "description": "A lightweight awareness timer with a floating overlay above apps to stay mindful of social media use.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

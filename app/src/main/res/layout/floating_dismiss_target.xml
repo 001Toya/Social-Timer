@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dismiss_target_container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Circular Target -->
+    <FrameLayout
+        android:id="@+id/dismiss_circle"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_dismiss_target_normal"
+        android:elevation="10dp">
+
+        <ImageView
+            android:id="@+id/dismiss_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:contentDescription="Dismiss floating timer"
+            android:src="@drawable/ic_dismiss_x" />
+    </FrameLayout>
+
+    <!-- Subtitle Pill -->
+    <TextView
+        android:id="@+id/dismiss_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/bg_dismiss_label"
+        android:paddingStart="10dp"
+        android:paddingTop="3dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="3dp"
+        android:text="Drag here to dismiss"
+        android:textColor="#E2E8F0"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/overlay_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_floating_overlay"
+    android:elevation="0dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="8dp"
+    android:paddingTop="2dp"
+    android:paddingEnd="4dp"
+    android:paddingBottom="2dp">
+
+    <!-- Subtle Status Indicator Dot -->
+    <View
+        android:id="@+id/overlay_status_dot"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/bg_overlay_dot" />
+
+    <!-- Timer / Alert Text Container -->
+    <LinearLayout
+        android:id="@+id/overlay_text_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/overlay_timer_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:includeFontPadding="false"
+            android:shadowColor="#F2000000"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="6"
+            android:text="00:00"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/overlay_sub_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:includeFontPadding="false"
+            android:shadowColor="#F2000000"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="5"
+            android:text=""
+            android:textColor="#FBBF24"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- Hidden divider for backwards compatibility with code references -->
+    <View
+        android:id="@+id/overlay_divider"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone" />
+
+    <!-- Minimal Pause / Resume Action Button -->
+    <ImageButton
+        android:id="@+id/overlay_btn_action"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="6dp"
+        android:background="@drawable/bg_overlay_action_btn"
+        android:contentDescription="Pause or Resume Timer"
+        android:padding="6dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_overlay_pause" />
+
+</LinearLayout>
